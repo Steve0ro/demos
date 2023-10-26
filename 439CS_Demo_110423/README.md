@@ -1,18 +1,42 @@
 # Forensics Demo for CT NG from 439AW-CS
 
-# Instructions:
+# Deploying the Containers
 
-## To build container:
-    - git clone or download zip
-    - enter folder, and run `docker build -t 439cs_demo .`
-        - wait for container to build
-    - to check if container is built:
-        `docker images`
-        - There should be a image called 439cs_demo
+## Forensics Container
+### Download from GitHub
+- git clone https://github.com/steve0ro/demos/439CS_Demo_110423
+	- cd into demos/439CS_Demo_110423/forensics
+- Once in directory where `Dockerfile` is located.
+	- `docker build -t forensics . `
+- Once the container `forensics` is built
+	- `docker run -it --rm forensics /usr/bin/zsh`
 
-## To run the container
-    - docker run -it --rm 439cs_demo /usr/bin/zsh
+### Loading image into Docker
+- Download the `forensics.tar` from GitHub repo.
+	- Loading into Docker
+		- docker load -i forensics.tar
+- Running the docker container
+	- `docker run -it --rm forensics /usr/bin/zsh`
+
+## CTF Container
+
+### Download from GitHub
+
+- git clone https://github.com/steve0ro/demos/439CS_Demo_110423
+	- cd into demos/439CS_Demo_110423/ctf
+- Once in directory where `Dockerfile` is located.
+	- `docker build -t ctf . `
+- Once the container `ctf` is built
+	- `docker run -it --rm ctf /usr/bin/zsh`
+
+### Loading image into Docker
+
+- Download the `ctf.tar` from GitHub repo.
+	- Loading into Docker
+		- `docker load -i ctf.tar` 
+- Running the docker container
+	- `docker run -it --rm ctf /usr/bin/zsh`
 
 ## If you would like to mount a directory and upload data to the container from host
-    - Make sure you are in the CWD in which your files are in. Other wise, grab the absolute path
-    `run -v $PWD:/opt/dfir_data -it --rm 439cs_demo /usr/bin/zsh`
+    - Make sure you are in the CWD in which your files are in. Other wise, grab the absolute path or use $PWD
+    `run -v $PWD:/opt/dfir_data -it --rm forensics /usr/bin/zsh`

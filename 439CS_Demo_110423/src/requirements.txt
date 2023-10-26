@@ -1,2 +1,0 @@
-pwntools
-evtx2es
