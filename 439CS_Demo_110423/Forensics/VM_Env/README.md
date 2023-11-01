@@ -4,6 +4,7 @@ caution.zip: Live malware used, hence the name caution. These files are the reve
 unzip_me.zip: These files are the forensics artifacts. Use CSV editor, Text-editor, or TimelineExplorer.exe
 
 ## Instructions
+- Unzip both archives and follow along during presentation.
 
-Unzip both archives and follow along during presentation.
-The bash script will unzip both archives into /opt/dfir, this script will also make you the owner of OPT directory since by default root owns. I tend to store all my tools, scripts and programs here. Feel free to change the script as needed
+## Bash Script
+- The bash script will unzip both archives into /opt/dfir, this script will also make you the owner of OPT directory since by default root owns. I tend to store all my tools, scripts and programs here. Feel free to change the script as needed
