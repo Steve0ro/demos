@@ -1,7 +1,7 @@
 # If the end-user is not using Docker and has a virtual instance
 
-caution.zip: Live malware used, hence the name caution. These files are the reverse_shells, meterpreter, and powershell used to establish a connection and persistence. 
-unzip_me.zip: These files are the forensics artifacts. Use CSV editor, Text-editor, or TimelineExplorer.exe
+- caution.zip: Live malware used, hence the name caution. These files are the reverse_shells, meterpreter, and powershell used to establish a connection and persistence. 
+- unzip_me.zip: These files are the forensics artifacts. Use CSV editor, Text-editor, or TimelineExplorer.exe
 
 ## Instructions
 - Unzip both archives and follow along during presentation.
